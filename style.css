@@ -10,13 +10,34 @@ h1{
 
 div > h1{
     width: 100vw;
-    height: 300px;
+    height: 250px;
     background-color: red;
 }
 
 .menu{
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    padding: 20px;
+    background-color: red;
+    text-align: right;
+    
+    width: 100vw;
+    height: 30px;
+
+
+    text-align: center;
+    padding-top: 20px;
+
+    padding-right: 40px;
+  
+    
+}
+
+a{
+    padding: 10px;
+
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgba(141, 135, 135, 0.288);
+    transition: color 0.3s ease;
 }
