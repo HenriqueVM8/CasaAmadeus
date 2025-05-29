@@ -6,7 +6,9 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+
+
+    background: linear-gradient(to top, #ffffffd0, #0000007e);
 }
 
 header{
@@ -128,11 +130,6 @@ header::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
 }
 
 header{
@@ -260,10 +257,6 @@ header::before {
 /*   Corpo do site    */
 
 
-.first-section {
-    background-color: #f0f0f0;
-}
-
 .bem-vindo{
     text-align: center;
     padding-top: 100px;
@@ -277,4 +270,32 @@ header::before {
     padding: 20px;
     font-size: 1.2rem;
     color: #33333396;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about-text h3 {
+    color: #dc143c;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+
+.about-text p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+
+    padding: 0 20px;
+    margin-top: 50  px;
 }
