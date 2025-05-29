@@ -28,12 +28,13 @@ h1{
 }
 
 .desktop-nav ul{
+    
     display: flex;
-    justify-content: right;
-    align-items: right;
-    margin-bottom: 130vh;
     margin-right: 50px;
     gap: 10px;
+    position: absolute;
+    right: 0;
+    top: -430px;
 }
 
 a{
