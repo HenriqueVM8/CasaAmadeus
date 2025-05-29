@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    padding-top: 125px;
+}
+
+div > h1{
+    width: 100vw;
+    height: 300px;
+    background-color: red;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+}
