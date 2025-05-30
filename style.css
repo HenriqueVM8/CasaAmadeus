@@ -8,7 +8,7 @@ body{
     font-family: Arial, sans-serif;
 
 
-    background: linear-gradient(to top, #ffffffd0, #00000070);
+    background: linear-gradient(to top, #ffffffd0, #00000042);
 }
 
 header{
@@ -263,7 +263,8 @@ header::before {
     text-align: center;
     padding-top: 100px;
     font-size: 2.5rem;
-
+    color: rgba(0, 0, 0, 0.747);
+    
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
@@ -288,6 +289,8 @@ header::before {
     font-weight: 600;
 
     padding: 0 20px;
+
+    padding-left: 50px;
     margin-top: 50px;
 }
 
@@ -299,6 +302,7 @@ header::before {
     color: #555;
 
     padding: 0 20px;
+    padding-left: 50px;
     margin-top: 50  px;
 }
 
@@ -306,7 +310,7 @@ header::before {
 /*  imagem   */
 
 .about-image > img {
-    width: 50%;
+    width: 45%;
     height: 200px;
 
     object-fit: cover;
