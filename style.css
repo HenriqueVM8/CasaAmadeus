@@ -8,7 +8,7 @@ body{
     font-family: Arial, sans-serif;
 
 
-    background: linear-gradient(to top, #ffffffd0, #0000007e);
+    background: linear-gradient(to top, #ffffffd0, #00000070);
 }
 
 header{
@@ -72,7 +72,7 @@ ul {
     list-style: none;
 }
 
-img{
+/*img.header-img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,7 +81,7 @@ img{
     transform: translate(-50%, -50%);
     object-fit: cover;
     z-index: 0;
-}
+}*/
 
 header video {
     position: absolute;
@@ -200,7 +200,7 @@ ul {
     list-style: none;
 }
 
-img{
+.logos-img{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -298,3 +298,16 @@ header::before {
     padding: 0 20px;
     margin-top: 50  px;
 }
+
+
+/*  imagem   */
+
+.about-image img {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
