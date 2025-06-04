@@ -409,6 +409,8 @@ header{
   background: transparent;
   color: white;
   border-color: white;
+
+  width: 155px;
 }
 
 .btn-secondary:hover {
@@ -562,7 +564,7 @@ header::before {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 25px;
 }
 
 
@@ -639,16 +641,15 @@ header::before {
 
 /* Responsividade */
 @media (max-width: 768px) {
+
   .desktop-nav {
     display: none;
   }
 
-  /* ADICIONE ESTA LINHA: */
   .mobile-menu-container {
     display: block;
   }
 
-  /* Resto do seu código mobile existente... */
   .hero-title {
     font-size: 2rem;
   }
@@ -699,7 +700,7 @@ header::before {
   }
 
   .container {
-    padding: 0 15px;
+    padding: 0 25px;
   }
 
   .hero-title {
@@ -707,7 +708,7 @@ header::before {
   }
 
   .hero-buttons .btn {
-    width: 100%;
+    /*width: 100%;*/
     max-width: 250px;
   }
 
