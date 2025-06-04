@@ -6,46 +6,48 @@
     <title>Casamadeus</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <header>
+
+    <header>
         <video autoplay muted loop playsinline>
-
             <source src="video/VideoCasamadeus.mp4" type="video/mp4">
-
         </video>
 
-        <!-- Logo da empresa -->
-        <div class="logo-container">
-            
+        <!-- Logo -->
+        <div class="logo-position">
             <a href="index.html"><img src="imagens/logo.png" alt="Casamadeus Logo" class="logo-img"></a>
-
-            <!-- <span class="logo-text">CASAMADEUS</span> --> <!-- texto ao lado da logo -->
         </div>
 
-        <div class="texto-sobre-video">
-            <nav class="desktop-nav">
+        <!-- Menu de navegação -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link active">Início</a></li>
+                <li><a href="sobre-nos.html" class="nav-link">Sobre Nós</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
 
-                <ul style="padding-top: 20px;">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="sobre-nos.html">Sobre Nós</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-
-                </ul>
-            </nav>
-
+        <!-- hero -->
+        <div class="hero">
+            <h1 class="hero-title">Soluções Completas em Transportes</h1>
+            <p class="hero-subtitle">Materiais de construção de qualidade superior com entrega garantida</p>
+            <div class="hero-buttons">
+                <a href="sobre-nos.html" class="btn btn-primary">Conhecer Mais</a>
+                <a href="contacto.html" class="btn btn-secondary">Contactar</a>
+            </div>
         </div>
-
     </header>
+
 
     <main>
 
         <section class="first-section">
-
-                <a href="#">Produtos</a>
-                <a href="#">Serviços</a>
-                <a href="#">Sobre Nós</a>
             <div class="texto-principal"> 
 
                 <h1 class="bem-vindo">Bem-vindo à Casamadeus</h1>
@@ -57,5 +59,7 @@
         </section>
 
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
