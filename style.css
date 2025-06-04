@@ -675,7 +675,7 @@ header::before {
   }
 
   .mobile-menu-container {
-    right: 20px;
+    right: 40px;
   }
 }
 
@@ -687,6 +687,10 @@ header::before {
 
   .mobile-menu-toggle span {
     width: 18px;
+  }
+
+  .mobile-menu-container {
+    right: 55px;
   }
 
   .mobile-nav-dropdown {
