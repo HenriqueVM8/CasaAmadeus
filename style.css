@@ -11,7 +11,7 @@ body{
     color: #333;
     overflow-x: hidden;
 
-    background: linear-gradient(to top, #ffffffd0, #00000042);
+    background: rgba(233, 231, 231, 0.39);
 }
 
 
@@ -475,8 +475,6 @@ header::before {
 
 
 /*   Corpo do site    */
-
-
 .bem-vindo{
     text-align: center;
     padding-top: 100px;
@@ -560,6 +558,70 @@ header::before {
 
 }
 
+/* Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Serviços em destaque */
+.services-highlight {
+  background: rgba(233, 231, 231, 0.39);
+}
+
+.services-grid-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  
+}
+
+.service-highlight {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+
+  margin-top: 50px;
+
+  margin-bottom: 50px;
+}
+
+.service-highlight:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon-large {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #dc143c, #b91c3c);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+}
+
+.service-highlight h3 {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service-highlight p {
+  color: #666;
+  line-height: 1.6;
+}
+
+
 
 
 
@@ -588,7 +650,7 @@ header::before {
 
   /* Resto do seu código mobile existente... */
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .hero-subtitle {
@@ -635,4 +697,26 @@ header::before {
     font-size: 0.9rem;
     padding: 10px 16px;
   }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .services-grid-main {
+    grid-template-columns: 1fr;
+  }
+
+  .service-highlight {
+    padding: 30px 20px;
+  }
+
 }
