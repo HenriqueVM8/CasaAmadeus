@@ -409,8 +409,6 @@ header{
   background: transparent;
   color: white;
   border-color: white;
-
-  width: 155px;
 }
 
 .btn-secondary:hover {
@@ -708,7 +706,7 @@ header::before {
   }
 
   .hero-buttons .btn {
-    /*width: 100%;*/
+    width: 100%;
     max-width: 250px;
   }
 
