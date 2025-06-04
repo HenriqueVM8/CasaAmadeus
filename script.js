@@ -1,42 +1,43 @@
-// Aguarda o DOM carregar
-document.addEventListener('DOMContentLoaded', function() {
-    
-    // Elementos do menu mobile
-    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-    const mobileNavDropdown = document.getElementById('mobileNavDropdown');
-    
-    // Verifica se os elementos existem
-    if (mobileMenuToggle && mobileNavDropdown) {
-        
-        // Toggle do menu mobile
-        mobileMenuToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            // Toggle das classes
-            mobileMenuToggle.classList.toggle('active');
-            mobileNavDropdown.classList.toggle('active');
-            
-            console.log('Menu toggled'); // Para debug
-        });
-        
-        // Fecha o menu ao clicar fora
-        document.addEventListener('click', function(e) {
-            if (!mobileMenuToggle.contains(e.target) && !mobileNavDropdown.contains(e.target)) {
-                mobileMenuToggle.classList.remove('active');
-                mobileNavDropdown.classList.remove('active');
-            }
-        });
-        
-        // Fecha o menu ao clicar em um link
-        const mobileNavLinks = mobileNavDropdown.querySelectorAll('a');
-        mobileNavLinks.forEach(function(link) {
-            link.addEventListener('click', function() {
-                mobileMenuToggle.classList.remove('active');
-                mobileNavDropdown.classList.remove('active');
-            });
-        });
-    }
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Elementos do menu mobile
+  const mobileMenuToggle = document.getElementById("mobileMenuToggle")
+  const mobileNavDropdown = document.getElementById("mobileNavDropdown")
+
+  // Verifica se os elementos existem
+  if (mobileMenuToggle && mobileNavDropdown) {
+    // Toggle do menu mobile
+    mobileMenuToggle.addEventListener("click", (e) => {
+      e.preventDefault()
+      e.stopPropagation()
+
+      // Toggle das classes
+      mobileMenuToggle.classList.toggle("active")
+      mobileNavDropdown.classList.toggle("active")
+
+      console.log("Menu toggled") // Para debug
+    })
+
+    // Fecha o menu ao clicar fora
+    document.addEventListener("click", (e) => {
+      if (!mobileMenuToggle.contains(e.target) && !mobileNavDropdown.contains(e.target)) {
+        mobileMenuToggle.classList.remove("active")
+        mobileNavDropdown.classList.remove("active")
+      }
+    })
+
+    // Fecha o menu ao clicar em um link
+    const mobileNavLinks = mobileNavDropdown.querySelectorAll("a")
+    mobileNavLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenuToggle.classList.remove("active")
+        mobileNavDropdown.classList.remove("active")
+      })
+    })
+  }
+
+
+
     
     // Smooth scrolling para links internos
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
