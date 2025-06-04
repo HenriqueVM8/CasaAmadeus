@@ -119,6 +119,28 @@ header{
     }
 
 
+
+/* Menu Mobile */
+
+.mobile-menu-toggle {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 10;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+
 /* Conteúdo Hero */
 .hero {
   position: relative;
@@ -359,3 +381,69 @@ header::before {
 
 }
 
+
+
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-title h1 {
+    font-size: 2rem;
+  }
+
+  .logo-position {
+    left: 20px;
+  }
+
+  .logo-img {
+    height: 60px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+} 
