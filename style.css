@@ -492,9 +492,24 @@ header::before {
     color: #33333396;
 }
 
+.about-section {
+    margin-top: 60px;
+    background: rgb(255, 255, 255);
+
+    height: 1010px;
+}
+
+
+.about-content1 {
+    display: grid;
+    
+    gap: 80px;
+    align-items: start;
+}
+
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    
     gap: 80px;
     align-items: start;
 }
@@ -506,8 +521,18 @@ header::before {
     font-weight: 600;
 
     padding: 0 20px;
+    text-align: center;
+    margin-top: 50px;
+}
 
-    padding-left: 50px;
+.about-text1 h3 {
+    color: #dc143c;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+
+    padding: 0 20px;
+    text-align: center;
     margin-top: 50px;
 }
 
@@ -517,10 +542,27 @@ header::before {
     font-size: 1rem;
     line-height: 1.7;
     color: #555;
+    text-align: center;
 
-    padding: 0 20px;
-    padding-left: 50px;
-    margin-top: 50  px;
+    padding: 0 400px;
+
+    text-align: justify;
+    margin-top: 50px;
+    
+}
+
+.about-text1 p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    text-align: center;
+
+    padding: 0 400px;
+
+    text-align: justify;
+    margin-top: 50px;
+    
 }
 
 
@@ -540,6 +582,54 @@ header::before {
     transform: translate(-50%, -50%);
     z-index: 0;
 
+}
+
+.service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #dc143c, #b91c3c);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.service-card h4 {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .img-section img{
@@ -564,6 +654,14 @@ header::before {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 25px;
+}
+
+.container-about {
+  max-width: 1450px;
+  margin: 70px auto;
+  padding: 0 25px;
+
+  width: 85vw;
 }
 
 
