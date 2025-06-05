@@ -742,7 +742,7 @@ header::before {
 
 .about-section {
     width: 100vw;
-    height: 1350px;
+    height: 2175px;
    }
 
   .about-text1 p {
@@ -761,7 +761,7 @@ header::before {
     line-height: 1.7;
     color: #555;
     text-align: center;
-    padding: 0 300px;
+    padding: 0 250px;
     text-align: justify;
   }
 
@@ -779,7 +779,7 @@ header::before {
 
   .about-section {
     width: 100vw;
-    height: 2380px;
+    height: 1950px;
    }
 
   .about-text1 p {
