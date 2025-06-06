@@ -843,6 +843,11 @@ header::before {
 @media (max-width: 480px) {
 
 
+  .bem-vindo{
+    font-size: 2rem;
+  }
+
+
     .container-about {
     max-width: 1450px;
     padding: 0 25px;
