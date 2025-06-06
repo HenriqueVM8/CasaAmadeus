@@ -776,11 +776,6 @@ header::before {
 
 @media (max-width: 768px) {
 
-  .bem-vindo{
-    font-size: 2rem;
-  }
-
-
   .about-section {
     width: 100vw;
     height: 1950px;
