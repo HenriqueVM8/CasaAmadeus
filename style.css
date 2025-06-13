@@ -11,7 +11,7 @@ body{
   color: #333;
   overflow-x: hidden;
 
-  background: rgba(233, 231, 231, 0.39);
+  background: rgb(255, 255, 255);
 }
 
 
@@ -492,11 +492,21 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   color: #33333396;
 }
 
+.img-section img{
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+
 .about-section {
   margin-top: 60px;
-  background: rgb(255, 255, 255);
+  background: rgba(214, 214, 214, 0.13);
 
-  height: 1750px;
+  height: 1700px;
 }
 
 
@@ -567,34 +577,37 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 
-/*  imagem   */
+/* about imagem   */
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}   
 
 .about-image img {
   width: 45%;
   height: 300px;
 
   object-fit: cover;
-  object-position: center;
+
+  /*object-position: center;*/
+
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 1s ease;
 
   border-radius: 10px;
-  position: relative;
+  /*position: relative;
 
   left: 27%;
   right: auto;
-  margin-top: 130px;
+  margin-top: 130px;*/
+
+  top: 50%;
 
 
-}
-
-.img-section img{
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border: 1px solid #f0f0f0;
 }
 
 .about-image img:hover {
@@ -606,7 +619,42 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 } 
 
 
+/* Seção de valores */
+.values-section {
+  background: white;
+}
 
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.value-item {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.value-item h3 {
+  color: #dc143c;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.value-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 3rem;
+  margin-top: 100px;
+}
 
 
 .service-card {
@@ -747,223 +795,248 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 /* Responsividade */
 
-@media (max-width: 1611px){
+@media (max-width: 1200px) {
 
- /* .about-text1 h3 {
-
-    font-size: 2rem;
+  .about-section {
+    height: auto;
+    min-height: 2000px;
+    padding-bottom: 50px;
   }
 
-  .about-text h3 {
-
-    font-size: 2rem;
-  }*/
-
-  .about-image img {
-    top: 295%;
-  }
-
-.about-section {
-    width: 100vw;
-    height: 2175px;
-   }
-
+  .about-text p,
   .about-text1 p {
-    margin-bottom: 2rem;
-    font-size: 1.3rem;
-    line-height: 1.7;
-    color: #555;
-    text-align: center;
-    padding: 0 300px;
-    text-align: justify;
+    padding: 0 150px;
   }
 
-  .about-text p {
-    margin-bottom: 2rem;
-    font-size: 1.3rem;
-    line-height: 1.7;
-    color: #555;
-    text-align: center;
-    padding: 0 250px;
-    text-align: justify;
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-
 
 }
 
+@media (max-width: 992px) {
 
+  .about-text p,
+  .about-text1 p {
+    padding: 0 100px;
+    font-size: 1.1rem;
+  }
 
+  .hero-title {
+    font-size: 2.8rem;
+  }
 
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .about-image img {
+    width: 60%;
+  }
+
+}
+
+/* Ajustes para tablets */
 
 @media (max-width: 768px) {
 
-  .about-image img {
-    margin-top: 60px;
-
-    width: 70vw;
-    height: 200px;
-    left: 14%;
-  }
-
-  .bem-vindo{
-    font-size: 2.5rem;
-  }
-
-  .about-section {
-    width: 100vw;
-    height: 2300px;
-   }
-
-  .about-text1 p {
-    margin-bottom: 2rem;
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #555;
-    text-align: center;
-    padding: 0 40px;
-    text-align: justify;
-  }
-
-  .about-text p {
-    margin-bottom: 2rem;
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #555;
-    text-align: center;
-    padding: 0 40px;
-    text-align: justify;
+  header {
+    height: 600px;
   }
 
   .desktop-nav {
     display: none;
   }
 
-  .mobile-menu-container {
-    display: block;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .page-title h1 {
-    font-size: 2rem;
-  }
-
-  .logo-position {
-    left: 20px;
-  }
-
-  .logo-img {
-    height: 60px;
-  }
-
-  .mobile-menu-container {
-    right: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .about-image img {
-    margin-top: 60px;
-
-    width: 70vw;
-    height: 200px;
-    left: 14%;
-  }
-
-
-  .bem-vindo{
-    font-size: 2rem;
-  }
-
-
-  .container-about {
-    max-width: 1450px;
-    padding: 0 25px;
-    width: 90vw;
-
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 45px;
-  }
-
-  .about-section {
-    width: 100vw;
-    height: 2500px;
-   }
-
-  .about-text1 p {
-    margin-bottom: 2rem;
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #555;
-    text-align: center;
-    padding: 0 40px;
-    text-align: justify;
-  }
-
-  .about-text p {
-    margin-bottom: 2rem;
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #555;
-    text-align: center;
-    padding: 0 40px;
-    text-align: justify;
-  }
-
   .mobile-menu-toggle {
-    width: 40px;
-    height: 40px;
+    display: flex;
+    right: 20px;
   }
 
-  .mobile-menu-toggle span {
-    width: 18px;
-  }
-
-  .mobile-menu-container {
-    right: 55px;
-  }
-
-  .mobile-nav-dropdown {
-    width: 180px;
-  }
-
-  .mobile-nav-dropdown a {
-    font-size: 0.9rem;
-    padding: 10px 16px;
-  }
-
-  .container {
-    padding: 0 25px;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-buttons .btn {
-    width: 100%;
-    max-width: 250px;
+  .hero {
+    padding: 0 30px;
   }
 
   .services-grid-main {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .service-highlight {
     padding: 30px 20px;
   }
 
+  .values-grid {
+    gap: 20px;
+  }
+
+}
+
+/* Ajustes para dispositivos móveis maiores */
+@media (max-width: 576px) {
+
+  header {
+    height: 500px;
+  }
+
+  .btn {
+    padding: 12px 20px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .logo-img {
+    height: 50px;
+  }
+
+  .bem-vindo {
+    padding-top: 60px;
+    font-size: 1.8rem;
+  }
+
+  .descricao {
+    font-size: 1rem;
+  }
+
+  .about-text h3,
+  .about-text1 h3 {
+    font-size: 1.6rem;
+    margin-top: 40px;
+  }
+
+  .about-text p,
+  .about-text1 p {
+    padding: 0 30px;
+    font-size: 0.95rem;
+    margin-top: 30px;
+  }
+
+  .about-image img {
+    width: 85%;
+    height: auto;
+    min-height: 180px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-top: 60px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+/* Ajustes para dispositivos móveis pequenos */
+@media (max-width: 375px) {
+
+  .logo-position {
+    left: 15px;
+    top: 15px;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .mobile-menu-toggle {
+    top: 20px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .bem-vindo {
+    font-size: 1.6rem;
+  }
+
+  .about-text h3,
+  .about-text1 h3 {
+    font-size: 1.4rem;
+  }
+
+  .about-text p,
+  .about-text1 p {
+    padding: 0 20px;
+    font-size: 0.9rem;
+  }
+
+  .service-highlight h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-highlight p {
+    font-size: 0.85rem;
+  }
+
+  .value-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .value-item p {
+    font-size: 0.85rem;
+  }
+
+}
+
+/* Corrigir posicionamento do menu mobile */
+@media (max-width: 768px) {
+
+  .mobile-menu-container {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+
+  .mobile-menu-toggle {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+  }
+  
+}
+
+/* Ajuste para altura automática da seção about */
+.about-section {
+  height: auto;
+  min-height: 1700px;
+  padding-bottom: 50px;
+}
+
+/* Melhorar a fluidez das imagens */
+.about-image img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Melhorar a responsividade dos grids */
+.services-grid,
+.services-grid-main,
+.values-grid {
+  display: grid;
+  gap: 30px;
 }
