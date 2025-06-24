@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamadeus</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <video autoplay muted loop playsinline>
+            <source src="video/VideoCasamadeus.mp4" type="video/mp4">
+        </video>
+
+        <!-- Logo -->
+        <div class="logo-position">
+            <a href="index.html"><img src="Imagens/logo.png" alt="Casamadeus Logo" class="logo-img"></a>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link active">Início</a></li>
+                <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li><a href="sobre-nos.html" class="nav-link">Sobre Nós</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Container do menu mobile -->
+        <div class="mobile-menu-container">
+            <!-- Botão do menu mobile -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu mobile dropdown -->
+            <nav class="mobile-nav-dropdown" id="mobileNavDropdown">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Início</a></li>
+                    <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li><a href="sobre-nos.html" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
